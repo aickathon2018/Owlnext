@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="owlnext_tiffany_green">#0ABAB5</color>
+    <color name="owlnext_light_green">#A2E8DD</color>
+    <color name="white">#FFFFFF</color>
+</resources>

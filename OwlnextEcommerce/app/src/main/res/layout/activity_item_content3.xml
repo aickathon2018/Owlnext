@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/bottom_toolbar_min_height" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/toolbar_min_height" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".66" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/actionbar_main"
+        android:layout_height="@dimen/toolbar_min_height"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/top_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/item_margin"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/top_toolbar">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_margin="@dimen/item_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cote Mid-Century Sofa"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/card_text_title"
+                    android:textColor="@color/owlnext_tiffany_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_margin="@dimen/item_img_margin"
+                        android:layout_width="@dimen/card_img_size"
+                        android:layout_height="@dimen/card_img_size"
+                        android:src="@drawable/sofa"
+                        />
+
+                    <GridLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:textSize="@dimen/card_text"
+                            android:layout_marginBottom="@dimen/card_text_margin"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM 410 "
+                            android:textSize="@dimen/card_text"
+                            android:layout_marginBottom="@dimen/card_text_margin"
+                            android:paddingLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="0"
+                            android:textSize="@dimen/card_text"
+                            android:layout_marginLeft="@dimen/card_text_margin"
+                            android:layout_marginRight="@dimen/card_text_margin"
+                            android:text=":" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_row="0"
+                            android:textSize="@dimen/card_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="1"
+                            android:textSize="@dimen/card_text"
+                            android:text="Manufacturer"
+                            android:layout_marginBottom="@dimen/card_text_margin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cote Furnitures "
+                            android:textSize="13sp"
+                            android:layout_marginBottom="@dimen/card_text_margin"
+                            android:paddingLeft="12dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="1"
+                            android:textSize="@dimen/card_text"
+                            android:layout_marginLeft="@dimen/card_text_margin"
+                            android:layout_marginRight="@dimen/card_text_margin"
+                            android:text=":" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:singleLine="false"
+                            android:layout_column="2"
+                            android:layout_row="1" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="2"
+                            android:textSize="@dimen/card_text"
+                            android:text="Category"
+                            android:layout_marginBottom="@dimen/card_text_margin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Furnitures "
+                            android:textSize="13sp"
+                            android:layout_marginBottom="@dimen/card_text_margin"
+                            android:paddingLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="2"
+                            android:layout_marginLeft="@dimen/card_text_margin"
+                            android:layout_marginRight="@dimen/card_text_margin"
+                            android:text=":" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_row="2" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:layout_row="3"
+                            android:textSize="@dimen/card_text"
+                            android:text="Rating"
+                            android:layout_marginBottom="@dimen/card_text_margin"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="***** "
+                            android:textSize="16sp"
+                            android:layout_marginBottom="@dimen/card_text_margin"
+                            android:paddingLeft="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_row="3"
+                            android:layout_marginLeft="@dimen/card_text_margin"
+                            android:layout_marginRight="@dimen/card_text_margin"
+                            android:text=":" />
+
+                        <TextView
+                            android:id="@+id/profile_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_row="3"
+                            android:maxLines="8"
+                            android:minLines="1"
+                            android:singleLine="false" />
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/item_img_margin"
+                    android:text="@string/item3_description"
+                    android:textSize="@dimen/card_text"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            android:text="View AR"
+            android:textColor="@color/white"
+            android:background="@color/owlnext_tiffany_green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_toolbar_min_height"
+        android:orientation="horizontal"
+        android:background="@color/owlnext_tiffany_green"
+        app:layout_constraintTop_toTopOf="@+id/bottom_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/bottom_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/left_toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_shopping_cart_white_18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomItem"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/bottom_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/left_toolbar"
+        app:layout_constraintRight_toRightOf="@+id/right_toolbar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_store_mall_directory_white_18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomStore"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/bottom_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/right_toolbar"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_credit_card_white_18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomCart"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

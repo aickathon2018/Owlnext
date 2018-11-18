@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OwlnextEcommerce</string>
+
+    <string name="toolbarHint">Search</string>
+
+    <string name="bottomItem">Items</string>
+    <string name="bottomStore">Store</string>
+    <string name="bottomCart">Cart</string>
+
+    <string name="item1_description">Authentic denim jacket style, with an updated, trendy design! Great for any season</string>
+    <string name="item2_description">High Top Sneakers perfect for cat lover and kids!</string>
+    <string name="item3_description">The Monroe collection is the epitome of effortless, casual style and extreme comfort. </string>
+    <string name="store1_description">The perfect store for people that loves denim clothing and accessories</string>
+    <string name="store2_description">Get yourself quality and colorful design of shoes suitable for both adults and kids.</string>
+    <string name="store3_description">Choose from variety of elegant and stylish furniture and have it directly to your home.</string>
+    <string name="AI1_description">This is an A.I. algorithm that will match you to your best fashion style.</string>
+</resources>
